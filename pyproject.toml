@@ -1,0 +1,30 @@
+[project]
+name = "graiax-console"
+version = "0.1.0"
+description = "Console support for GraiaCommunity."
+authors = [
+    {name = "BlueGlassBlock", email = "blueglassblock@outlook.com"},
+]
+dependencies = [
+    "textual~=0.1.8",
+    "loguru>=0.6.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+[project.optional-dependencies]
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=22.8.0",
+    "isort>=5.10.1",
+]
+
+[tool.isort]
+profile = "black"
